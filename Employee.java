@@ -1,4 +1,4 @@
-public class Employee implements Comparable<Employee> {
+public class Employee{
     String name;
     int id;
     double salary;
@@ -9,10 +9,5 @@ public class Employee implements Comparable<Employee> {
     }
     public String toString(){
         return "\tname ="+name+"\t id "+id+"\t salary "+salary;
-    }
-
-    @Override
-    public int compareTo(Employee o) {
-        return o.id-this.id;
     }
 }
